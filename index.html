@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="الموقع الرسمي للشيخ عرفة عبدالمنعم للقرآن الكريم والتلاوات المرئية والصوتية.">
+    <title>الشيخ عرفة عبدالمنعم | Arfa Abdelmonem</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container navbar">
+            <div class="logo">
+                <a href="#">
+                    <h1>الشيخ عرفة عبدالمنعم</h1>
+                </a>
+            </div>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#audio">التلاوات الصوتية</a></li>
+                    <li><a href="#video">المرئيات</a></li>
+                    <li><a href="#about">عن الشيخ</a></li>
+                </ul>
+            </nav>
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="تبديل الوضع الليلي">
+                🌙
+            </button>
+            
+            <button id="mobile-menu-btn" class="hidden">☰</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                 <!-- Placeholder for Image -->
+                 <div class="hero-icon">
+                    📖
+                 </div>
+                <div class="hero-text">
+                    <h2>وَرَتِّلِ الْقُرْآنَ تَرْتِيلًا</h2>
+                    <p>مرحباً بكم في الموقع الرسمي للشيخ عرفة عبدالمنعم. استمع وحمل أندر التلاوات الخاشعة.</p>
+                    <div class="hero-buttons">
+                        <a href="#audio" class="btn btn-primary">🎧 استمع الآن</a>
+                        <a href="#video" class="btn btn-secondary">🎥 المرئيات</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audio Section -->
+        <section id="audio" class="section">
+            <div class="container">
+                <h2 class="section-title">التلاوات الصوتية</h2>
+                
+                <!-- Search & Filter -->
+                <div class="audio-controls">
+                    <input type="text" id="audio-search" placeholder="ابحث عن سورة..." class="search-input">
+                </div>
+
+                <!-- Playlist/Track List -->
+                <div class="audio-list-container">
+                    <ul class="audio-list" id="audio-list">
+                        <!-- Example Static Items - Will be populated by JS later -->
+                        <li class="audio-item" data-src="assets/audio/surah-fatiha.mp3" data-title="سورة الفاتحة">
+                            <div class="track-info">
+                                <span class="track-number">01</span>
+                                <span class="track-title">سورة الفاتحة</span>
+                                <span class="track-meta">مكية • 7 آيات</span>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </li>
+                        <li class="audio-item" data-src="assets/audio/surah-baqarah.mp3" data-title="سورة البقرة">
+                            <div class="track-info">
+                                <span class="track-number">02</span>
+                                <span class="track-title">سورة البقرة</span>
+                                <span class="track-meta">مدنية • 286 آية</span>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </li>
+                         <li class="audio-item" data-src="assets/audio/surah-kahf.mp3" data-title="سورة الكهف">
+                            <div class="track-info">
+                                <span class="track-number">18</span>
+                                <span class="track-title">سورة الكهف</span>
+                                <span class="track-meta">مكية • 110 آيات</span>
+                            </div>
+                            <button class="play-btn">▶</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section id="video" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title">المرئيات</h2>
+                
+                <div class="video-grid">
+                    <!-- Video Card 1 -->
+                    <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="play-overlay">▶</div>
+                            <!-- Placeholder -->
+                            <div class="thumb-placeholder"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>تلاوة خاشعة من سورة طه</h3>
+                            <span class="video-date">1445 هـ</span>
+                        </div>
+                    </div>
+                     <!-- Video Card 2 -->
+                     <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="play-overlay">▶</div>
+                            <div class="thumb-placeholder"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>سورة الرحمن - تلاوة نادرة</h3>
+                            <span class="video-date">1444 هـ</span>
+                        </div>
+                    </div>
+                     <!-- Video Card 3 -->
+                     <div class="video-card">
+                        <div class="video-thumbnail">
+                            <div class="play-overlay">▶</div>
+                            <div class="thumb-placeholder"></div>
+                        </div>
+                        <div class="video-info">
+                            <h3>دعاء ختم القرآن</h3>
+                            <span class="video-date">رمضان 1445</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">عن الشيخ</h2>
+                <div class="about-content">
+                    <p>الشيخ عرفة عبدالمنعم، قارئ للقرآن الكريم يتميز بصوت عذب وأداء خاشع...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Persistent Audio Player -->
+    <div id="sticky-player" class="sticky-player hidden">
+        <div class="container player-inner">
+            <div class="track-details">
+                <span id="current-track-title">سورة الفاتحة</span>
+            </div>
+            <div class="player-controls">
+                <button id="prev-btn">⏮</button>
+                <button id="play-pause-btn" class="main-play-btn">▶</button>
+                <button id="next-btn">⏭</button>
+            </div>
+            <div class="progress-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="seek-bar" value="0">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 الشيخ عرفة عبدالمنعم. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
